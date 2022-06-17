@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto&family=Yusei+Magic&display=swap');
 
+@font-face {
+    font-family: fruitForceFont;
+    src: url("fonts/FruitForceFont.ttf");
+}
+
+@font-face {
+    font-family: lostFlameFont;
+    src: url("fonts/LostFlameFont.ttf");
+}
+
 :root
 {
     --color-accent: rgb(165, 0, 0);
@@ -15,6 +25,12 @@
 body
 {
     font-family: "Roboto", sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Navbar */
@@ -52,15 +68,28 @@ body
     align-items: center;
 }
 
-.navbar-links li a
-{
-    text-decoration: none;
-    color: #fff;
-}
-
 .navbar-links li a:hover
 {
     color: var(--color-accent);
+}
+
+.accent-underline
+{
+    text-decoration: underline solid var(--color-accent) 3px;
+}
+
+/* Footer */
+.footer
+{
+    height: 100px;
+    color: #fff;
+    background-color: #050505;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
 
 /* Main Content */
@@ -153,4 +182,120 @@ body
 .content-item:nth-of-type(6)
 {
     grid-area: content-3-right;
+}
+
+/* Projects Page */
+.project-content
+{
+    background-color: #161616;
+    color: #fff;
+    width: 100%;
+    min-height: 1000px;
+    padding-bottom: 50px;
+}
+
+.project-content-container
+{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 100px repeat(2, 500px);
+    row-gap: 50px;
+}
+
+.project-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.project-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.project-item-icons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 225px;
+}
+
+.project-item-icons img
+{
+    border: 1px solid #000;
+    border-radius: 25%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.fruit-force-box
+{
+    
+    background-image: linear-gradient(to top right, #B818CA, #94329F, #7B3583, #4C2251);
+    font-family: "fruitForceFont", "Roboto", sans-serif;
+    color: #5AEA1B;
+}
+
+.fruit-force-box h1
+{
+    text-shadow: 5px 5px rgba(0, 0, 0, 1);
+    font-size: 40px;
+}
+
+.fruit-force-box p
+{
+    text-shadow: 2px 2px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+.project-box h3, .project-box h4
+{
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.project-box h3
+{
+    font-size: 30px;
+}
+
+.project-box h4
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.lost-flame-box
+{
+    background-image: linear-gradient(to top right, #20AB43, #005715);
+    font-family: "lostFlameFont", "Roboto", sans-serif;
+    color: #85FFFF;
+}
+
+.lost-flame-box h1
+{
+    text-shadow: 5px 5px rgba(0, 0, 0, 1);
+    font-size: 80px;
+}
+
+.lost-flame-box p
+{
+    text-shadow: 2px 2px rgba(0, 0, 0, 1);
+    font-size: 25px;
+    text-align: center;
+}
+
+.bottom
+{
+    height: 50px;
 }
