@@ -1,3 +1,4 @@
+//Reveal Effects
 reveal(".reveal");
 
 window.addEventListener("scroll", function()
@@ -21,4 +22,19 @@ function reveal(className)
             reveals[i].classList.add("active");
         }
     }
+}
+//Legal Dropdowns
+
+const dropdownIDs = ["fruit-force-privacy-policy", "fruit-force-T&C"];
+const dropdownButtonIDs = ["fruit-force-privacy-dropdown-button", "fruit-force-T&C-dropdown-button"];
+
+for (let i = 0; i < dropdownIDs.length; i++)
+{
+    document.getElementById(dropdownButtonIDs[i]).addEventListener("click", function()
+    {
+        const ffpp = document.getElementById(dropdownIDs[i]);
+
+        ffpp.classList.toggle("legal-active");
+        ffpp.classList.toggle("legal-hidden");  
+    });
 }
