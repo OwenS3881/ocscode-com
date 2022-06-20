@@ -29,12 +29,12 @@
         </nav>
         <div class="support-content">
             <div class="support-content-container">
-                <form class="contact-form gradient-background" accept="#">
+                <form class="contact-form gradient-background" action="#">
                     <h1 class="accent-underline">Contact Me</h1>
                     <input type="text" class="form-name" placeholder="Name...">
-                    <input type="email" class="form-email" placeholder="Email...">
+                    <input type="email" class="form-email" placeholder="Email..." required>
                     <input type="text" class="form-subject" placeholder="Subject...">
-                    <textarea class="form-message" cols="5" rows="5" placeholder="Message..."></textarea>
+                    <textarea class="form-message" cols="5" rows="5" placeholder="Message..." required></textarea>
                     <button class="form-submit-button" type="submit">Send Message</button>
                 </form>
             </div>
@@ -42,5 +42,7 @@
         <footer class="footer">
             &copy;2022 Owen Szymanski
         </footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

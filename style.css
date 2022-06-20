@@ -219,6 +219,7 @@ hr
 {
     margin-bottom: 10px;
     font-size: 50px;
+    text-align: center;
 }
 
 .main-header p
@@ -234,7 +235,7 @@ hr
 
 .content-item
 {
-    height: 200px;
+    height: 300px;
     background-color: #242424;
     padding: 10px;
 }
@@ -303,6 +304,11 @@ hr
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+}
+
+.project-box h1
+{
+    text-align: center;
 }
 
 .project-item-icons
@@ -424,6 +430,7 @@ hr
 {
     height: 50px;
     width: 50%;
+    min-width: 350px;
     margin-bottom: 10px;   
     border-radius: 15px;
     padding: 5px;
@@ -444,7 +451,8 @@ hr
     margin: 5px 0 10px 0;
     border-radius: 15px;
     padding: 5px;
-    min-width: 50%;
+    width: 50%;
+    min-width: 350px;
     max-width: 90%;
     min-height: 150px;
     max-height: 250px;
@@ -466,7 +474,7 @@ hr
     border-radius: 15px;
     width: 25%;
     height: 50px;
-    font-size: 25px;
+    font-size: 22px;
     border: 5px solid #040404;
     background-color: #121212;
     color: #fff;
@@ -668,4 +676,53 @@ input:focus, textarea:focus
 .legal-dropdown-button.active .dropdown-arrow
 {
     transform: rotate(180deg);
+}
+
+/* Small Screens/Mobile */
+
+@media (max-width: 700px)
+{
+    .main-content-container
+    {
+        grid-template-areas: 
+        "header"
+        "content-1-left"
+        "content-1-right"
+        "content-2-left" 
+        "content-2-right"
+        "content-3-left"
+        "content-3-right"
+        ;
+        grid-template-columns: 1fr;
+    }
+
+    .fruit-force-box p
+    {
+        font-size: 10px;
+    }
+
+    .fruit-force-box h1
+    {
+        font-size: 34px;
+    }
+
+    .lost-flame-box p
+    {
+        font-size: 20px;
+    }
+
+    .form-submit-button
+    {
+        font-size: 17px;
+    }
+
+    .legal-content-container
+    {
+        grid-template-areas: 
+        "header"
+        "fruit-force"
+        "lost-flame"
+        ;
+        grid-template-columns: 1fr;
+    }
 }
