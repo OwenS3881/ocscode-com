@@ -25,16 +25,19 @@ function reveal(className)
 }
 //Legal Dropdowns
 
-const dropdownIDs = ["fruit-force-privacy-policy", "fruit-force-T&C"];
-const dropdownButtonIDs = ["fruit-force-privacy-dropdown-button", "fruit-force-T&C-dropdown-button"];
+const dropdownIDs = ["fruit-force-privacy-policy", "fruit-force-T&C", "lost-flame-privacy-policy", "lost-flame-T&C"];
+const dropdownButtonIDs = ["fruit-force-privacy-dropdown-button", "fruit-force-T&C-dropdown-button", "lost-flame-privacy-dropdown-button", "lost-flame-T&C-dropdown-button"];
 
 for (let i = 0; i < dropdownIDs.length; i++)
 {
-    document.getElementById(dropdownButtonIDs[i]).addEventListener("click", function()
-    {
-        const ffpp = document.getElementById(dropdownIDs[i]);
+    const button = document.getElementById(dropdownButtonIDs[i]);
 
-        ffpp.classList.toggle("legal-active");
-        ffpp.classList.toggle("legal-hidden");  
+    button.addEventListener("click", function()
+    {
+        const dropdown = document.getElementById(dropdownIDs[i]);
+
+        button.classList.toggle("active");
+        dropdown.classList.toggle("legal-active");
+        dropdown.classList.toggle("legal-hidden");  
     });
 }
