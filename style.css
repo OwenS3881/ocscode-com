@@ -163,7 +163,6 @@ hr
     background-color: #161616;
     color: #fff;
     width: 100%;
-    min-height: 1000px;
 }
 
 .main-content-container
@@ -171,16 +170,6 @@ hr
     max-width: 1440px;
     margin: 0 auto;
     padding: 15px;
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "content-1-left content-1-left content-1-right"
-    "content-2-left content-2-right content-2-right"
-    "content-3-left content-3-left content-3-right"
-    ;
-    row-gap: 20px;
-    column-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .main-header
@@ -190,8 +179,8 @@ hr
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
-    height: 500px;
+    padding: 15px;
+    height: 750px;
     background-color: #242424;
 }
 
@@ -217,15 +206,15 @@ hr
 
 .main-header h1
 {
-    margin-bottom: 10px;
-    font-size: 50px;
+    margin-bottom: 30px;
+    font-size: 60px;
     text-align: center;
 }
 
 .main-header p
 {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .gradient-background
@@ -418,6 +407,27 @@ hr
     align-items: center;
     padding: 15px;
     font-family: "Roboto", sans-serif;
+}
+
+.contact-form > *
+{
+    opacity: 0;
+    animation-name: contact-form-intro;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contact-form-intro 
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
 }
 
 .contact-form h1
