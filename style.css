@@ -140,7 +140,13 @@ hr
 
 .accent-underline
 {
+    /*
     text-decoration: underline solid var(--color-accent) 3px;
+    */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: 3px;
 }
 
 /* Footer */
@@ -440,7 +446,7 @@ hr
 {
     height: 50px;
     width: 50%;
-    min-width: 350px;
+    min-width: 300px;
     margin-bottom: 10px;   
     border-radius: 15px;
     padding: 5px;
@@ -462,7 +468,7 @@ hr
     border-radius: 15px;
     padding: 5px;
     width: 50%;
-    min-width: 350px;
+    min-width: 300px;
     max-width: 90%;
     min-height: 150px;
     max-height: 250px;
@@ -490,6 +496,7 @@ hr
     color: #fff;
     transition-property: background-color, color, transform;
     transition-duration: 0.25s;
+    min-width: 150px;
 }
 
 .form-submit-button:hover
@@ -692,18 +699,14 @@ input:focus, textarea:focus
 
 @media (max-width: 700px)
 {
-    .main-content-container
+    .main-header h1
     {
-        grid-template-areas: 
-        "header"
-        "content-1-left"
-        "content-1-right"
-        "content-2-left" 
-        "content-2-right"
-        "content-3-left"
-        "content-3-right"
-        ;
-        grid-template-columns: 1fr;
+        font-size: 45px;
+    }
+
+    .main-header p
+    {
+        font-size: 20px;
     }
 
     .fruit-force-box p
@@ -713,12 +716,17 @@ input:focus, textarea:focus
 
     .fruit-force-box h1
     {
-        font-size: 34px;
+        font-size: 25px;
     }
 
     .lost-flame-box p
     {
         font-size: 20px;
+    }
+
+    .lost-flame-box h1
+    {
+        font-size: 60px;
     }
 
     .form-submit-button
@@ -734,5 +742,11 @@ input:focus, textarea:focus
         "lost-flame"
         ;
         grid-template-columns: 1fr;
+    }
+
+    .navbar-links a
+    {
+        transition-property: color;
+        transition-duration: 0.01s;
     }
 }
