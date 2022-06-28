@@ -624,6 +624,7 @@ input:focus, textarea:focus
 .legal-dropdown-button
 {
     margin-top: 10px;
+    margin-bottom: 20px;
     width: 150px;
     height: 40px;
     border-radius: 20px;
@@ -631,10 +632,10 @@ input:focus, textarea:focus
     background-color: #000;
     border: 2px solid #fff;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     outline: none;
+    text-align: center;
 }
 
 .legal-dropdown-button:hover
@@ -649,7 +650,7 @@ input:focus, textarea:focus
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: auto;
+    font-size: 12px;
 }
 
 .dropdown-arrow
@@ -693,6 +694,41 @@ input:focus, textarea:focus
 .legal-dropdown-button.active .dropdown-arrow
 {
     transform: rotate(180deg);
+}
+
+.legal-sub-main
+{
+    background-color: #161616;
+    color: #fff;
+    padding: 20px;
+}
+
+.legal-sub-main p
+{
+    margin: 20px 10px 0px;
+}
+
+.legal-sub-main h2
+{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.legal-sub-main a:hover
+{
+    text-decoration: underline;
+}
+
+.legal-sub-back
+{
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: auto;
+    background-color: #000;
+    display: block;
+    width: 80px;
 }
 
 /* Small Screens/Mobile */

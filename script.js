@@ -1,5 +1,3 @@
-console.log(window.innerWidth);
-
 //Reveal Effects
 reveal(".reveal");
 
@@ -26,7 +24,7 @@ function reveal(className)
     }
 }
 //Legal Dropdowns
-
+/*
 const dropdownIDs = ["fruit-force-privacy-policy", "fruit-force-T&C", "lost-flame-privacy-policy", "lost-flame-T&C"];
 const dropdownButtonIDs = ["fruit-force-privacy-dropdown-button", "fruit-force-T&C-dropdown-button", "lost-flame-privacy-dropdown-button", "lost-flame-T&C-dropdown-button"];
 
@@ -47,6 +45,7 @@ for (let i = 0; i < dropdownIDs.length; i++)
         dropdown.classList.toggle("legal-hidden");  
     });
 }
+*/
 
 //Contact Form
 (function() {
